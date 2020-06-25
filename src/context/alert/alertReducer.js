@@ -10,3 +10,12 @@ export const alertReducer = (state, action) => {
   const handler = handlers[action.type] || handlers.DEFAULT
   return handler(state, action)
 }
+
+// First version
+// export const alertReducer = (state, action) => {
+//   switch (action.type) {
+//     case SHOW_ALERT: return action.payload
+//     case HIDE_ALERT: return null
+//     default: return state
+//   }
+// }
